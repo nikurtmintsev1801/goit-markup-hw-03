@@ -31,6 +31,9 @@ img {
 h2 {
     margin-bottom: 72px;
 }
+h3 {
+    margin-bottom: 8px;
+}
 
                 
 .container {
@@ -132,12 +135,13 @@ margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 188px 0 188px;
 }
 .section-hero{
     background-color: #2e2f42;
 }
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     margin-bottom: 48px;
     font-weight: 700;
     font-size: 56px;
@@ -155,6 +159,10 @@ margin-left: auto;
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
+    border-radius: 4px;
+        min-width: 169px;
+        height: 56px;
+        border: none;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -185,6 +193,7 @@ margin-left: auto;
 .features-list {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
     
 }
 .features-item {
@@ -216,6 +225,8 @@ border-radius: 0 0 4px 4px;
 .team-list {
     display: flex;
    justify-content: space-between;
+   gap: 24px;
+   padding: 32px 0;
 }
 .team-text {
     padding: 32px 16px;
@@ -238,6 +249,7 @@ row-gap: 48px;
     border-bottom: 1px solid #e7e9fc;
         border-left: 1px solid #e7e9fc;
         border-right: 1px solid #e7e9fc;
+        border-top: none;
         width: calc((100% - 48px) / 3);
     
 }
@@ -245,17 +257,20 @@ row-gap: 48px;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
+    padding-right: 16px;
 }
 
 
 .page-footer {
     background-color: #2e2f42;
-}
-.footer-container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
+padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.page-footer .main-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+    
 }
 
 .page-footer .main-logo-part {
@@ -266,6 +281,7 @@ row-gap: 48px;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #f4f4fd;
+        
 }
 .footer-text {
         font-weight: 400;
